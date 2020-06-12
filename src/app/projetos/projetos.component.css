@@ -1,0 +1,27 @@
+#projetos {
+    padding: 0px 20px;
+    margin: 60px 0px 0px 0px;
+}
+
+.container-projetos {
+    display: flex;
+}
+
+.card-projetos {
+    width: 200px;
+    margin: 0px 20px;
+    background: #eee;
+}
+
+.card-projetos img {
+    width: 100%;
+    height: auto;
+}
+
+.card-projetos .proj-foot {
+    display: block;
+}
+
+.card-projetos .proj-foot h3 {
+    width: 100%;
+}

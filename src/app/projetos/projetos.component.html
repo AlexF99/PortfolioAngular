@@ -1,1 +1,16 @@
-<p>projetos works!</p>
+<section id="projetos">
+    <div class="container-projetos">
+        <div class="card-projetos" *ngFor="let proj of projetos">
+            <div class="proj-head">
+                <img src="https://secure.gravatar.com/avatar/9feb963bd9a4fad0b6a8f737cfbe8707?s=80&d=identicon" alt="">
+            </div>
+            <div class="proj-foot">
+                <h3>{{ proj.title }}</h3>
+                <p>tecnologias:</p>
+                <ul>
+                    <li *ngFor="let tech of proj.stack">{{ tech }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

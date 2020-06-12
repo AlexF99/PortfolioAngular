@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjetosComponent implements OnInit {
 
+  projetos: any = [
+    {
+      "title": "todo laravel",
+      "stack": [
+        "laravel",
+        "angular"
+      ]
+    },
+    {
+      "title": "this portfolio"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
