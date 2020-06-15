@@ -16,7 +16,28 @@ export class ProjetosComponent implements OnInit {
       ]
     },
     {
-      "title": "this portfolio"
+      "title": "this portfolio",
+      "stack": [
+        "laravel",
+        "angular"
+      ]
+    },
+    {
+      "title": "this portfolio",
+      "stack": [
+      ]
+    },
+    {
+      "title": "this portfolio",
+      "stack": [
+      ]
+    },
+    {
+      "title": "this portfolio",
+      "stack": [
+        "laravel",
+        "angular"
+      ]
     }
   ]
 

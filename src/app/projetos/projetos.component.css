@@ -1,27 +1,50 @@
 #projetos {
     padding: 0px 20px;
     margin: 60px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .container-projetos {
-    display: flex;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto auto auto;
 }
 
 .card-projetos {
     width: 200px;
-    margin: 0px 20px;
+    margin: 0px 0px 20px 20px;
     background: #eee;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .card-projetos img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card-projetos .proj-foot {
     display: block;
+    padding: 0px 0px 0px 10px;
 }
 
 .card-projetos .proj-foot h3 {
     width: 100%;
+}
+
+@media (max-width: 760px) {
+    .container-projetos {
+        grid-template-columns: 250px 250px;
+        grid-template-rows: auto auto;
+    }
+}
+@media (max-width: 400px) {
+    .container-projetos {
+        grid-template-columns: 250px;
+        grid-template-rows: auto;
+    }
 }
