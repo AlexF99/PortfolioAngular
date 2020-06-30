@@ -1,6 +1,7 @@
 #projetos {
     padding: 0px 20px;
-    margin: 60px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     font-family: 'Nunito', sans-serif;
@@ -8,7 +9,7 @@
 
 .container-projetos {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px 250px;
     grid-template-rows: auto auto auto;
 }
 
@@ -36,6 +37,12 @@
     width: 100%;
 }
 
+@media (max-width: 970px) {
+    .container-projetos {
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: auto auto auto;
+    }
+}
 @media (max-width: 760px) {
     .container-projetos {
         grid-template-columns: 250px 250px;
