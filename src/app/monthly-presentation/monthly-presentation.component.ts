@@ -109,6 +109,7 @@ export class MonthlyPresentationComponent implements OnInit {
 
   ngOnInit(): void {
     this.active = [false, false, false, false, false, false];
+    // this.active = [true, true, true, true, true, true];
   }
 
   closeAll() {
@@ -118,8 +119,11 @@ export class MonthlyPresentationComponent implements OnInit {
   }
 
   openItem(index: number) {
-    this.closeAll();
-    this.active[index] = true;
+    if (this.active[index]) {
+      this.closeAll();
+    } else {
+      this.closeAll();
+      this.active[index] = true;
+    }
   }
-
 }
