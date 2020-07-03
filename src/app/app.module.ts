@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
+import { MonthlyPresentationComponent } from './monthly-presentation/monthly-presentation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { BannerComponent } from './banner/banner.component';
     HeaderComponent,
     ProjetosComponent,
     HomeComponent,
-    BannerComponent
+    BannerComponent,
+    MonthlyPresentationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
