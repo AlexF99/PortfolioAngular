@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { MonthlyPresentationComponent } from './monthly-presentation/monthly-presentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WrapModule } from './wrap/wrap.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjetosComponent,
     HomeComponent,
     BannerComponent,
-    MonthlyPresentationComponent
+    MonthlyPresentationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    WrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
