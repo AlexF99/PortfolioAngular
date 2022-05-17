@@ -1,49 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-projetos',
   templateUrl: './projetos.component.html',
-  styleUrls: ['./projetos.component.css']
+  styleUrls: ['./projetos.component.css'],
 })
 export class ProjetosComponent implements OnInit {
+  projects: any;
 
-  projetos: any = [
-    {
-      "title": "todo laravel",
-      "stack": [
-        "laravel",
-        "angular"
-      ]
-    },
-    {
-      "title": "this portfolio",
-      "stack": [
-        "laravel",
-        "angular"
-      ]
-    },
-    {
-      "title": "this portfolio",
-      "stack": [
-      ]
-    },
-    {
-      "title": "this portfolio",
-      "stack": [
-      ]
-    },
-    {
-      "title": "this portfolio",
-      "stack": [
-        "laravel",
-        "angular"
-      ]
-    }
-  ]
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  async ngOnInit() {
+    this.projects = (
+      await this.http
+        .get('http://localhost:3000/projects', { observe: 'response' })
+        .toPromise()
+    ).body;
   }
-
 }

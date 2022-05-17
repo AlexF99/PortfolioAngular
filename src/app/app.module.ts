@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { MonthlyPresentationComponent } from './monthly-presentation/monthly-presentation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WrapModule } from './wrap/wrap.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WrapModule } from './wrap/wrap.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    WrapModule
+    WrapModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
