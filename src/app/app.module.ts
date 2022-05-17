@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ProjetosComponent } from './projetos/projetos.component';
+import { ProjectsComponent } from './projetos/projects.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 import { MonthlyPresentationComponent } from './monthly-presentation/monthly-presentation.component';
@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProjetosComponent,
+    ProjectsComponent,
     HomeComponent,
     BannerComponent,
     MonthlyPresentationComponent,

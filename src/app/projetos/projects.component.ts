@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 
 @Component({
-  selector: 'app-projetos',
-  templateUrl: './projetos.component.html',
-  styleUrls: ['./projetos.component.css'],
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css'],
 })
-export class ProjetosComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
   projects: any;
 
   constructor(private http: HttpClient) {}
